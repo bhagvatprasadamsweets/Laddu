@@ -1,0 +1,11 @@
+# Robots.txt for Laddu Online Store
+User-agent: *
+Allow: /
+
+# Prevent indexing of non-existent backend/system paths
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+
+# Sitemap Location
+Sitemap: https://laddu.megascale.co.in/sitemap.xml
