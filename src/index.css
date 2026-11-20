@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Quicksand', sans-serif;
+}
+
+/* Universal FAQ typography enforcement across all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 115px;
+}
+
+html,
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Quicksand', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #4B2E1B;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.font-1 {
+  font-family: 'Quicksand', sans-serif !important;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-2 {
+  font-family: 'Quicksand', sans-serif !important;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font-3 {
+  font-family: 'Quicksand', sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-6 {
+  font-family: 'Quicksand', sans-serif !important;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-7 {
+  font-family: 'Quicksand', sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Animated Runner Line on top of Navbar moving towards the right side */
+@keyframes navbarRunner {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(420%);
+    opacity: 0;
+  }
+}
+
+.navbar-runner-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 26%;
+  background: linear-gradient(90deg, transparent 0%, rgba(217, 119, 6, 0.15) 20%, #c79e64 45%, #d97706 70%, #f59e0b 88%, #fef08a 97%, transparent 100%);
+  border-radius: 9999px;
+  animation: navbarRunner 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.85), 0 0 4px rgba(217, 119, 6, 0.95);
+  will-change: transform, opacity;
+}
+
+/* Custom scrollbar matching royal amber theme */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #fefcfa;
+}
+::-webkit-scrollbar-thumb {
+  background: #c79e64;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #70470d;
+}
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 2px solid #70470d;
+  outline-offset: 2px;
+}
+
