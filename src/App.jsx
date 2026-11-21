@@ -77,19 +77,19 @@ export default function App() {
       if (ogTitle) ogTitle.setAttribute('content', p.seoTitle)
       if (ogDesc) ogDesc.setAttribute('content', p.metaDescription)
     } else {
-      document.title = 'Buy Laddu Online | Traditional Indian Sweets'
+      document.title = 'Buy Laddu Online | Boondi Laddu Online & Gujarati Sweets'
       if (metaDesc) {
         metaDesc.setAttribute(
           'content',
-          'Buy delicious traditional Indian laddus online. Explore Boondi Laddu, Churma, Motichoor, and other authentic Gujarati sweets. Inquire online and enjoy traditional flavours.'
+          'Buy Boondi Laddu online and authentic Gujarati laddu online. Handcrafted in 100% pure desi ghee: Traditional Boondi Laddu, Churma, Motichoor, Magaj, Mathiya, and Dry Fruit Laddu. Inquire online for festive treats.'
         )
       }
       if (canonical) canonical.setAttribute('href', 'https://laddu.megascale.co.in/')
-      if (ogTitle) ogTitle.setAttribute('content', 'Buy Laddu Online | Traditional Indian Sweets')
+      if (ogTitle) ogTitle.setAttribute('content', 'Buy Laddu Online | Boondi Laddu Online & Gujarati Sweets')
       if (ogDesc) {
         ogDesc.setAttribute(
           'content',
-          'Buy delicious traditional Indian laddus online. Explore Boondi Laddu, Churma, Motichoor, and other authentic Gujarati sweets. Inquire online and enjoy traditional flavours.'
+          'Buy Boondi Laddu online and authentic Gujarati laddu online. Handcrafted in 100% pure desi ghee: Traditional Boondi Laddu, Churma, Motichoor, Magaj, Mathiya, and Dry Fruit Laddu. Inquire online for festive treats.'
         )
       }
     }
