@@ -176,7 +176,7 @@ export default function AllLaddusBanner() {
               coords={scaledCoords[area.id] || area.coords.join(',')}
               href={area.link}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               alt={area.alt || area.name}
               title={`Click to view and order ${area.name}`}
             />
@@ -190,7 +190,7 @@ export default function AllLaddusBanner() {
               key={item.id}
               href={item.link}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               onMouseEnter={() => setHoveredId(item.id)}
               onMouseLeave={() => setHoveredId(null)}
               style={{
@@ -221,7 +221,7 @@ export default function AllLaddusBanner() {
               key={area.id}
               href={area.link}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               onMouseEnter={() => setHoveredId(area.id)}
               onMouseLeave={() => setHoveredId(null)}
               className={`font-1 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold shadow-xs hover:shadow-md transition-all duration-200 active:scale-95 cursor-pointer ${

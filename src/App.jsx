@@ -73,7 +73,7 @@ export default function App() {
       const p = policies[activePolicyKey]
       document.title = p.seoTitle
       if (metaDesc) metaDesc.setAttribute('content', p.metaDescription)
-      if (canonical) canonical.setAttribute('href', `https://laddu.megascale.co.in/#${p.hash}`)
+      if (canonical) canonical.setAttribute('href', 'https://laddu.megascale.co.in/')
       if (ogTitle) ogTitle.setAttribute('content', p.seoTitle)
       if (ogDesc) ogDesc.setAttribute('content', p.metaDescription)
     } else {

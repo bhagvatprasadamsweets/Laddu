@@ -152,6 +152,24 @@ export default function Hero({ laddus = [], selectedLaddu, onSelectLaddu, onQuic
             </div>
           </div>
         </div>
+
+        {/* Semantic Crawlable Variety Hub: Exposes All 6 Varieties simultaneously for Search Engines */}
+        <div className="sr-only" aria-hidden="false">
+          {laddus.map((l) => (
+            <article key={l.id} id={l.anchorId} className="my-2">
+              <h2>{l.id === 'boondi' ? 'Buy Traditional Boondi Laddu Online' : l.heading}</h2>
+              <p>{l.description}</p>
+              <p>Authentic taste profile: {l.tasteProfile}</p>
+              <ul>
+                {l.seo?.ingredientsList?.map((ing, i) => (
+                  <li key={i}>{ing}</li>
+                ))}
+              </ul>
+              <p>{l.seo?.shortAnswer}</p>
+              <p>{l.seo?.craftsmanship}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   )
